@@ -1,12 +1,12 @@
 # Typescript Linting
-Set up Typescript linting for Snagajob Angular 2 Projects.
+Typescript linting for Snagajob Angular 2 Projects.
 
-Linting?? sound like extra work... TRUE, but we strive for re-usable components right? Besides have you ever worked on old code and got frustrated by how unreadbale it was? Let's not do that to each other. We can start with linting.
+Linting?? sounds like extra work... TRUE, but we strive for re-usable components right? Besides have you ever worked on old code and got frustrated by how unreadbale it was? Let's not do that to each other. We can start with linting.
 
 Linting will go through .ts files and flag code that breaks our standards. 
 
 ## Dependencies
-In your project's package.json ensure you have the following dependencies.
+In your project's package.json ensure you have the following dependencies. We build on air bnb's linting config, and tweak it a little for our use.
 
 + [tslint](https://www.npmjs.com/package/tslint)
 + [tslint-config-airbnb](https://www.npmjs.com/package/tslint-config-airbnb)
@@ -41,3 +41,19 @@ npm run tslint "src/**/*.ts"
 This command takes a directory where all your .ts files reside, usually src/ or app/. **/*.ts acts as a wild card to find all the .ts files under that directory. You can be more specific if you'd like, and specify a file to lint.
 
 ## Set up a Script in package.json
+For those of you who don't want to run a long command every time you need to lint your entire project, you can add a lint script to your package.json. 
+
+Under the 'scripts' property, add the following commands.
+```
+*package.json
+
+"scripts": {
+  "lint": "npm run tslint \"src/**/*.ts\"",
+  "tslint": "tslint",
+}
+```
+
+Now in your console you can run 'npm lint' to get a console print out of all the lint errors in your project.
+```
+npm lint
+```
