@@ -48,7 +48,7 @@ Under the 'scripts' property, add the following commands.
 *package.json
 
 "scripts": {
-  "lint": "npm run tslint \"src/**/*.ts\"",
+  "lint": "npm run tslint 'src/**/*.ts\'",
   "tslint": "tslint",
 }
 ```
