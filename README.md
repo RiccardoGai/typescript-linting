@@ -5,6 +5,8 @@ Linting?? sounds like extra work... TRUE, but we strive for re-usable components
 
 Linting will go through .ts files and flag code that breaks our standards. 
 
+For a link to our standards check out our [Javascript Style Guide.](https://github.com/Snagajob/javascript)
+
 ## Dependencies
 In your project's package.json ensure you have the following dependencies. We build on air bnb's linting config, and tweak it a little for our use.
 
