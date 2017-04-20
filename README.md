@@ -38,6 +38,6 @@ Use the following command to run linting.
 npm run tslint "src/**/*.ts"
 ```
 
-This command takes the directory of where all your .ts files reside. Usually src/ or app/ then **/*ts act as wild cards and find all the .ts files to lint. You can be more specific if you'd like, and specify a file to lint.
+This command takes a directory where all your .ts files reside, usually src/ or app/. **/*.ts acts as a wild card to find all the .ts files under that directory. You can be more specific if you'd like, and specify a file to lint.
 
 ## Set up a Script in package.json
