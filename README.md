@@ -57,3 +57,8 @@ Now in your console you can run 'npm lint' to get a console print out of all the
 ```
 npm lint
 ```
+
+## Include Linting in your Build process.
+Now that you included linting in your packge.json scripts, add that script to your build process.
+
+This is the best way to ensure all code getting built meets our standard.
